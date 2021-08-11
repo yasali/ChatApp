@@ -1,0 +1,12 @@
+"app_title" = "Chat App";
+"home_view_title" = "Home";
+"login" = "Log in";
+"register" = "Register";
+"email" = "Email";
+"username" = "User Name";
+"password" = "Password";
+"first_name" = "First Name";
+"last_name" = "Last Name";
+"not_registered" = "Not registered yet?  ";
+"already_registered" = "Already registered?  ";
+"registering_user" = "Registering User..";
