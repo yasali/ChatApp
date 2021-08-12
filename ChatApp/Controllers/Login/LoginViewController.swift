@@ -36,10 +36,10 @@ class LoginViewController: UIViewController {
         button.setTitle(NSLocalizedString("login", comment: "Login"), for: .normal)
         button.layer.cornerRadius = 5
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        button.backgroundColor = lightBackgroundColor.withAlphaComponent(0.5)
+        button.backgroundColor = buttonBackgroundColor.withAlphaComponent(0.5)
         button.setTitleColor(lightTextColor, for: .normal)
         button.setHeightForConstraint(height: 50)
-        button.isEnabled = false
+        button.isEnabled = true // FIXME change to false
         button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         return button
     }()
@@ -76,6 +76,7 @@ class LoginViewController: UIViewController {
     // MARK: - Selectors
     @objc func handleLogin() {
       // TBD
+        delegate?.onLoginSuccess()
     }
     
     @objc func handleShowRegister() {
@@ -131,10 +132,10 @@ class LoginViewController: UIViewController {
     func updateLoginForm() {
         if loginViewModel.isValidInput {
             loginButton.isEnabled = true
-            loginButton.backgroundColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)
+            loginButton.backgroundColor = buttonBackgroundColor
         } else {
-            loginButton.isEnabled = false
-            loginButton.backgroundColor =  #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1).withAlphaComponent(0.5)
+            loginButton.isEnabled = true // FIXME change to false
+            loginButton.backgroundColor =  buttonBackgroundColor.withAlphaComponent(0.5)
         }
     }
 }

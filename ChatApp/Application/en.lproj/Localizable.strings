@@ -10,3 +10,6 @@
 "not_registered" = "Not registered yet?  ";
 "already_registered" = "Already registered?  ";
 "registering_user" = "Registering User..";
+"chats" = "Chats";
+"account_info_title" = "Account Info";
+"send_message" = "Send Message";

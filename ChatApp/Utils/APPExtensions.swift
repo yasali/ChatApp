@@ -99,7 +99,7 @@ extension UIViewController {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.largeTitleTextAttributes = [.foregroundColor: lightTextColor]
-        appearance.backgroundColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
+        appearance.backgroundColor = lightBackgroundColor
         
         navigationController?.navigationBar.standardAppearance = appearance
         navigationController?.navigationBar.compactAppearance = appearance
@@ -111,6 +111,7 @@ extension UIViewController {
         navigationController?.navigationBar.isTranslucent = true
         
         navigationController?.navigationBar.overrideUserInterfaceStyle = .dark
+
     }
     
     func alertError(_ errorMessage: String) {

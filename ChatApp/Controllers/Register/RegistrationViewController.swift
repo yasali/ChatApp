@@ -34,7 +34,7 @@ class RegistrationViewController: UIViewController {
         registerButton.setTitle(NSLocalizedString("register", comment: "Register"), for: .normal)
         registerButton.layer.cornerRadius = 5
         registerButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        registerButton.backgroundColor = lightBackgroundColor.withAlphaComponent(0.5)
+        registerButton.backgroundColor = buttonBackgroundColor.withAlphaComponent(0.5)
         registerButton.setTitleColor(lightTextColor, for: .normal)
         registerButton.setHeightForConstraint(height: 50)
         registerButton.isEnabled = false
@@ -179,10 +179,10 @@ class RegistrationViewController: UIViewController {
     func updateRegisterForm() {
         if registrationViewModel.isValidInput {
             registerButton.isEnabled = true
-            registerButton.backgroundColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
+            registerButton.backgroundColor = buttonBackgroundColor
         } else {
             registerButton.isEnabled = false
-            registerButton.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1).withAlphaComponent(0.5)
+            registerButton.backgroundColor = buttonBackgroundColor.withAlphaComponent(0.5)
         }
     }
 }

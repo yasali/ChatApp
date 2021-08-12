@@ -23,7 +23,10 @@
 		FC7B691A26C29BCA00961190 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B691926C29BCA00961190 /* CustomTextFieldView.swift */; };
 		FC7B692226C29BEB00961190 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B692126C29BEB00961190 /* CustomTextField.swift */; };
 		FC7B692726C29E3100961190 /* AuthViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B692626C29E3100961190 /* AuthViewModels.swift */; };
-		FCF2C6E726C2C57200EF440C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF2C6E626C2C57200EF440C /* HomeController.swift */; };
+		FCD7DFBD26C5570800F93C94 /* APPConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7DFBC26C5570800F93C94 /* APPConstants.swift */; };
+		FCD7DFC226C5639100F93C94 /* AccountInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7DFC126C5639100F93C94 /* AccountInfoViewController.swift */; };
+		FCD7DFDB26C57F0400F93C94 /* SendMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7DFDA26C57F0400F93C94 /* SendMessageViewController.swift */; };
+		FCF2C6E726C2C57200EF440C /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF2C6E626C2C57200EF440C /* ChatsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +72,10 @@
 		FC7B691926C29BCA00961190 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		FC7B692126C29BEB00961190 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		FC7B692626C29E3100961190 /* AuthViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModels.swift; sourceTree = "<group>"; };
-		FCF2C6E626C2C57200EF440C /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		FCD7DFBC26C5570800F93C94 /* APPConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPConstants.swift; sourceTree = "<group>"; };
+		FCD7DFC126C5639100F93C94 /* AccountInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoViewController.swift; sourceTree = "<group>"; };
+		FCD7DFDA26C57F0400F93C94 /* SendMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewController.swift; sourceTree = "<group>"; };
+		FCF2C6E626C2C57200EF440C /* ChatsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				FC7B68CE26C283FB00961190 /* APPExtensions.swift */,
+				FCD7DFBC26C5570800F93C94 /* APPConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -213,7 +220,9 @@
 		FC7B690226C2988900961190 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FCF2C6E226C2C00A00EF440C /* Home */,
+				FCD7DFD126C57ED300F93C94 /* Message */,
+				FCD7DFC626C5639B00F93C94 /* Account */,
+				FCF2C6E226C2C00A00EF440C /* Chats */,
 				FC7B690526C2991A00961190 /* Register */,
 				FC7B690426C2991300961190 /* Login */,
 			);
@@ -249,12 +258,28 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
-		FCF2C6E226C2C00A00EF440C /* Home */ = {
+		FCD7DFC626C5639B00F93C94 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				FCF2C6E626C2C57200EF440C /* HomeController.swift */,
+				FCD7DFC126C5639100F93C94 /* AccountInfoViewController.swift */,
 			);
-			path = Home;
+			path = Account;
+			sourceTree = "<group>";
+		};
+		FCD7DFD126C57ED300F93C94 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				FCD7DFDA26C57F0400F93C94 /* SendMessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		FCF2C6E226C2C00A00EF440C /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				FCF2C6E626C2C57200EF440C /* ChatsViewController.swift */,
+			);
+			path = Chats;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,15 +460,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC7B68A926C2823800961190 /* LoginViewController.swift in Sources */,
+				FCD7DFDB26C57F0400F93C94 /* SendMessageViewController.swift in Sources */,
 				FC7B692226C29BEB00961190 /* CustomTextField.swift in Sources */,
 				FC7B687626C2817500961190 /* AppDelegate.swift in Sources */,
 				FC7B692726C29E3100961190 /* AuthViewModels.swift in Sources */,
-				FCF2C6E726C2C57200EF440C /* HomeController.swift in Sources */,
+				FCF2C6E726C2C57200EF440C /* ChatsViewController.swift in Sources */,
+				FCD7DFC226C5639100F93C94 /* AccountInfoViewController.swift in Sources */,
 				FC7B68F426C2921700961190 /* AuthenticationService.swift in Sources */,
 				FC7B691A26C29BCA00961190 /* CustomTextFieldView.swift in Sources */,
 				FC7B68E526C290AA00961190 /* RegistrationViewController.swift in Sources */,
 				FC7B68D026C283FB00961190 /* APPExtensions.swift in Sources */,
 				FC7B68EB26C291B900961190 /* AuthCredentials.swift in Sources */,
+				FCD7DFBD26C5570800F93C94 /* APPConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

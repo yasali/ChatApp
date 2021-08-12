@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func startChatApp() {
         // TBD implement routing in Seperate Router, handles all navigation
-        let nav = UINavigationController(rootViewController: HomeController())
+        let nav = UINavigationController(rootViewController: ChatsViewController())
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }
