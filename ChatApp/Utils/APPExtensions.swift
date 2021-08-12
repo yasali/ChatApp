@@ -78,7 +78,7 @@ extension UIViewController {
 
     func setupGradientLayer() {
         let gradient = CAGradientLayer()
-        gradient.colors = [#colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1).cgColor, #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1).cgColor]
+        gradient.colors = [lightBackgroundColor.cgColor, darkBackgroundColor.cgColor]
         gradient.locations = [0, 1]
         view.layer.addSublayer(gradient)
         gradient.frame = view.frame
@@ -98,7 +98,7 @@ extension UIViewController {
     func setTitleInViewControllerForNavigationBar(title: String) {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: lightTextColor]
         appearance.backgroundColor = #colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)
         
         navigationController?.navigationBar.standardAppearance = appearance
@@ -107,7 +107,7 @@ extension UIViewController {
         
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationItem.title = title
-        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.tintColor = lightTextColor
         navigationController?.navigationBar.isTranslucent = true
         
         navigationController?.navigationBar.overrideUserInterfaceStyle = .dark

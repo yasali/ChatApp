@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
         
         let attributedTitle = NSMutableAttributedString(string: NSLocalizedString("app_title", comment: "App Title"),
                                                         attributes: [.font: UIFont.boldSystemFont(ofSize: 42),
-                                                                     .foregroundColor: UIColor.white])
+                                                                     .foregroundColor: lightTextColor])
         label.attributedText = attributedTitle
         return label
     }()
@@ -36,8 +36,8 @@ class LoginViewController: UIViewController {
         button.setTitle(NSLocalizedString("login", comment: "Login"), for: .normal)
         button.layer.cornerRadius = 5
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        button.backgroundColor = #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1).withAlphaComponent(0.5)
-        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = lightBackgroundColor.withAlphaComponent(0.5)
+        button.setTitleColor(lightTextColor, for: .normal)
         button.setHeightForConstraint(height: 50)
         button.isEnabled = false
         button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
@@ -57,10 +57,10 @@ class LoginViewController: UIViewController {
         
         let attributedTitle = NSMutableAttributedString(string: NSLocalizedString("not_registered", comment: "Not registered"),
                                                         attributes: [.font: UIFont.systemFont(ofSize: 16),
-                                                                     .foregroundColor: UIColor.white])
+                                                                     .foregroundColor: lightTextColor])
         attributedTitle.append(NSAttributedString(string: NSLocalizedString("register", comment: "Register"),
                                                   attributes: [.font: UIFont.boldSystemFont(ofSize: 16),
-                                                               .foregroundColor: UIColor.white]))
+                                                               .foregroundColor: lightTextColor]))
         button.setAttributedTitle(attributedTitle, for: .normal)
         button.addTarget(self, action: #selector(handleShowRegister), for: .touchUpInside)
         return button

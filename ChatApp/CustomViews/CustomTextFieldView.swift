@@ -11,7 +11,7 @@ class CustomTextFieldView: UIView {
                               right: rightAnchor, paddingLeft: 8, paddingBottom: -8)
         
         let dividerView = UIView()
-        dividerView.backgroundColor = .white
+        dividerView.backgroundColor = lightTextColor
         addSubview(dividerView)
         dividerView.setConstraint(left: leftAnchor, bottom: bottomAnchor, right: rightAnchor,
                            paddingLeft: 8, height: 0.75)

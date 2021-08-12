@@ -8,7 +8,7 @@ class RegistrationViewController: UIViewController {
     private let appTitleLabel: UILabel = {
         let attributedTitle = NSMutableAttributedString(string: "Chat App",
                                                                      attributes: [.font: UIFont.boldSystemFont(ofSize: 42),
-                                                                     .foregroundColor: UIColor.white])
+                                                                     .foregroundColor: lightTextColor])
         let label = UILabel()
         label.attributedText = attributedTitle
         return label
@@ -34,8 +34,8 @@ class RegistrationViewController: UIViewController {
         registerButton.setTitle(NSLocalizedString("register", comment: "Register"), for: .normal)
         registerButton.layer.cornerRadius = 5
         registerButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        registerButton.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1).withAlphaComponent(0.5)
-        registerButton.setTitleColor(.white, for: .normal)
+        registerButton.backgroundColor = lightBackgroundColor.withAlphaComponent(0.5)
+        registerButton.setTitleColor(lightTextColor, for: .normal)
         registerButton.setHeightForConstraint(height: 50)
         registerButton.isEnabled = false
         registerButton.addTarget(self, action: #selector(handleRegistration), for: .touchUpInside)
@@ -46,10 +46,10 @@ class RegistrationViewController: UIViewController {
         let arBtn = UIButton(type: .system)
         let attributedTitle = NSMutableAttributedString(string: NSLocalizedString("already_registered", comment: "Already Registered"),
                                                         attributes: [.font: UIFont.systemFont(ofSize: 16),
-                                                                     .foregroundColor: UIColor.white])
+                                                                     .foregroundColor: lightTextColor])
         attributedTitle.append(NSAttributedString(string: NSLocalizedString("login", comment: "Login"),
                                                   attributes: [.font: UIFont.boldSystemFont(ofSize: 16),
-                                                               .foregroundColor: UIColor.white]))
+                                                               .foregroundColor: lightTextColor]))
         arBtn.setAttributedTitle(attributedTitle, for: .normal)
         arBtn.addTarget(self, action: #selector(handleShowLogin), for: .touchUpInside)
         return arBtn

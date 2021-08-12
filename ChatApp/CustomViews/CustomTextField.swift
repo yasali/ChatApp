@@ -7,10 +7,10 @@ class CustomTextField: UITextField {
         
         borderStyle = .none
         font = UIFont.systemFont(ofSize: 16)
-        textColor = .white
+        textColor = lightTextColor
         keyboardAppearance = .dark
         attributedPlaceholder = NSAttributedString(string: placeholder,
-                                                   attributes: [.foregroundColor : UIColor.white])
+                                                   attributes: [.foregroundColor : lightTextColor])
     }
     
     required init?(coder: NSCoder) {
