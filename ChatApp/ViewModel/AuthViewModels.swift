@@ -38,3 +38,26 @@ struct RegistrationViewModel: AuthenticationProtocol {
     }
 }
 
+enum AccountInfoViewModel: Int, CaseIterable {
+    case personalInfo
+    case settings
+
+    var title: String {
+        switch self {
+        case .personalInfo:
+            return "Personal info"
+        case .settings:
+            return "Settings"
+        }
+    }
+    var imageName: String {
+        switch self {
+        case .personalInfo:
+            return "person.circle"
+        case .settings:
+            return "gearshape.fill"
+        }
+    }
+    
+    
+}

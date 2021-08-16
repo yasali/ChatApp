@@ -23,6 +23,7 @@
 		FC7B691A26C29BCA00961190 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B691926C29BCA00961190 /* CustomTextFieldView.swift */; };
 		FC7B692226C29BEB00961190 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B692126C29BEB00961190 /* CustomTextField.swift */; };
 		FC7B692726C29E3100961190 /* AuthViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7B692626C29E3100961190 /* AuthViewModels.swift */; };
+		FCC9E98826CA7AB000996FA3 /* profile_img_.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FCC9E98726CA7AB000996FA3 /* profile_img_.jpeg */; };
 		FCD7DFBD26C5570800F93C94 /* APPConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7DFBC26C5570800F93C94 /* APPConstants.swift */; };
 		FCD7DFC226C5639100F93C94 /* AccountInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7DFC126C5639100F93C94 /* AccountInfoViewController.swift */; };
 		FCD7DFDB26C57F0400F93C94 /* SendMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7DFDA26C57F0400F93C94 /* SendMessageViewController.swift */; };
@@ -72,6 +73,7 @@
 		FC7B691926C29BCA00961190 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		FC7B692126C29BEB00961190 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		FC7B692626C29E3100961190 /* AuthViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModels.swift; sourceTree = "<group>"; };
+		FCC9E98726CA7AB000996FA3 /* profile_img_.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = profile_img_.jpeg; path = ../../../../../Desktop/profile_img_.jpeg; sourceTree = "<group>"; };
 		FCD7DFBC26C5570800F93C94 /* APPConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPConstants.swift; sourceTree = "<group>"; };
 		FCD7DFC126C5639100F93C94 /* AccountInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoViewController.swift; sourceTree = "<group>"; };
 		FCD7DFDA26C57F0400F93C94 /* SendMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageViewController.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 		FC7B690326C298B200961190 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				FCC9E98726CA7AB000996FA3 /* profile_img_.jpeg */,
 				FC7B687526C2817500961190 /* AppDelegate.swift */,
 				FC7B687B26C2817500961190 /* Main.storyboard */,
 				FC7B687E26C2817600961190 /* Assets.xcassets */,
@@ -393,6 +396,7 @@
 				FC1AA9BC26C41DD5000AD51B /* Localizable.strings in Resources */,
 				FC7B687F26C2817600961190 /* Assets.xcassets in Resources */,
 				FC7B687D26C2817500961190 /* Main.storyboard in Resources */,
+				FCC9E98826CA7AB000996FA3 /* profile_img_.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
